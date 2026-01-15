@@ -36,13 +36,13 @@ services:
   taxi_ingest:
     image: taxi_ingest:v001
     container_name: taxi_ingest
-    command:
-      - --pg-user=root
-      - --pg-pass=root
-      - --pg-host=pgdatabase
-      - --pg-port=5432
-      - --pg-db=ny_taxi
-      - --target-table=yellow_taxi_trips
+    # command:
+    #   - --pg-user=root
+    #   - --pg-pass=root
+    #   - --pg-host=pgdatabase
+    #   - --pg-port=5432
+    #   - --pg-db=ny_taxi
+    #   - --target-table=yellow_taxi_trips
     networks:
       - pg-network
     depends_on:
