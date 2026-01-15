@@ -34,6 +34,9 @@ services:
       - pgdatabase
 
   taxi_ingest:
+    build:
+      context: .
+      dockerfile: Dockerfile.taxi_ingest
     image: taxi_ingest:v001
     container_name: taxi_ingest
     # command:

@@ -2,17 +2,15 @@
 
 ## Setup and Running
 
-### Build Docker Image
-
-This Dockerfile creates the containerized application for the taxi data ingestion service.
-
-```bash
-docker build -t taxi_ingest:v001 .
-```
-
 ### Start Services
 
-In another terminal:
+The docker-compose.yml automatically builds the taxi ingestion service from `Dockerfile.taxi_ingest` and starts all services:
+
+```bash
+docker-compose up --build
+```
+
+Or simply:
 
 ```bash
 docker-compose up
