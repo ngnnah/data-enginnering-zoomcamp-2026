@@ -114,3 +114,17 @@ WHERE DATE(trip.lpep_pickup_datetime) >= '2025-11-01'
 ORDER BY tip_amount DESC 
 LIMIT 10;
 ```
+
+### Question 7
+
+Which of the following sequences describes the Terraform workflow for:
+1. Downloading plugins and setting up backend
+2. Generating and executing changes
+3. Removing all resources
+
+**Answer**: `terraform init, terraform apply -auto-approve, terraform destroy`
+
+**Explanation**:
+- `terraform init` - Downloads plugins and sets up backend
+- `terraform apply -auto-approve` - Generates and executes changes without manual confirmation
+- `terraform destroy` - Removes all resources managed by Terraform
