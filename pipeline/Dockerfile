@@ -11,7 +11,7 @@ RUN uv sync --locked
 
 
 # COPY from host system to Docker image
-COPY pipeline.py .
+COPY ingest_data.py .
 
 # setting ENTRYPOINT for automated container execution
-ENTRYPOINT ["python", "pipeline.py"]
+ENTRYPOINT ["python", "ingest_data.py"]
